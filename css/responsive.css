@@ -8,14 +8,63 @@
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-
+.carousel-caption h1 img {
+    filter: brightness(0) invert(1);
+    vertical-align: sub;
+    width: 60px;
+}
+.carousel-caption p {
+    font-family: "Raleway", sans-serif;
+}
 @media only screen and (max-width:1366px){
-	.main-slider2 .mslider-caption {padding: 14% 15%;} 
+	.main-slider2 .mslider-caption {padding: 14% 15%;}
 	.masonry-gallery.grid-10 .isotope-item {width: 20%;}
+    .ulockd-flip-clock .clock .flip-clock-label {margin-top: 130px;}
+    .ms-section.ms-table {
+        padding: 0 !important;
+    }
+    .ms-left, .ms-right {
+        height: calc(100% + 20px) !important;
+    }
+    .carousel-caption {
+        padding: 0;
+        bottom: auto !important;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+    .flip-clock-wrapper .flip-clock-divider.minutes {
+        display: block;
+        float: none;
+        margin-bottom: 30px;
+        width: 0;
+    }
+    .flip-clock-divider.minutes .flip-clock-label {
+        top: calc(100% + 3px);
+    }
+    .flip-clock-divider.minutes .flip-clock-dot {
+        display: none;
+    }
+    .ulockd-mrgn1240 {
+        margin-top: 0;
+    }
+    .carousel-caption h2 {
+        font-size: 20px;
+    }
+    .carousel-caption h1 {
+        font-size: 48px;
+        font-family: "Engagement", cursive;
+    }
+    .carousel-caption h1 img {
+        width: 60px;
+    }
  }
 /*  (min-width:1200px)+++ */
 @media only screen and (max-width:1200px){
-	.carousel-caption h1 {font-size: 36px;}
+
  }
 /* (min-width:992px) (max-width:1199px) */
 @media only screen and (max-width:1199px){
@@ -41,7 +90,7 @@
 	.social-linked {float: none !important; margin-bottom: 10px; text-align: center;}
 	.ulockd-login-form {margin-bottom: 25px;}
 	/* home responsibe style Start*/
-	
+
 	.cd-slider-nav { width: 100%;}
 	/* home slider end */
 	/* home responsibe style 2 Start*/
@@ -69,7 +118,7 @@
 	.posted-date {bottom: -20%;}
 	/* Shop section */
 	.feature-box h3 {margin-bottom: 0;}
-	.ulockd-flip-clock .clock {padding-left: 0;margin-top: 25px;}
+	.ulockd-flip-clock .clock {padding-left: 0;margin-top: 0;}
 	.couple-img::before, .couple-img::after {left: 51.2%;}
 	.w50prcnt {width: 100%;}
 	.timeline-panel.left .timeline-body img {border-radius: 0 0 50px 50px;}
@@ -81,7 +130,6 @@
 	.contact-details .contact-place li {padding: 25px 20px;}
 }
 @media only screen and (max-width:1024px){
-	.carousel-caption {top: 20%;}
 	.main-slider2 .mslider-caption {padding: 8%;}
 }
 @media only screen and (max-width:992px){
@@ -109,7 +157,6 @@
 	.ulockd-ffact{margin-bottom: 60px;}
 	.ulockd-ffact-one:hover {margin-top: 0;}
 	.shop-box, .shop-box2, .about-box, .divider-box {margin-bottom: 50px;}
-	.carousel-caption {top: 20%;}
 	.social-linked {margin-top: 10px;margin-bottom: 0 !important;}
 	/* Icon box */
 	.icon_box:hover .icon {
@@ -166,8 +213,6 @@
 	.product-shop-pop {margin-bottom: 25px !important;}
 	.ulockd-footer-qlink{margin-bottom: 35px;}
 	.shop-form-control {margin-bottom: 15px;}
-
-	.upcoming-wedding-event.ulockd-flip-clock {margin-top: 60px;}
 	.event-box {margin-bottom: 40px;}
 	.testimonial-grid .details {padding: 10px 20px 128px;margin-bottom: 50px;}
 	figure.img-box {margin-bottom: 30px;}
@@ -175,6 +220,60 @@
 	.dib {display: contents;}
 	.flip-container, .title-bottom, .about-box2 {margin-bottom: 30px;}
 	.team-member-two .team-two-details {bottom: -43%;}
+    .carousel-caption h2 {
+        font-size: 15px;
+    }
+    .carousel-caption p {
+        font-size: 23px;
+    }
+    .carousel-caption h1 {
+        font-size: 33px;
+    }
+    .carousel-caption h1 img {
+        width: 40px;
+    }
+    .flip-clock-wrapper {
+        margin: 0;
+    }
+    .flip-clock-wrapper ul {
+        width: 40px;
+        height: 70px;
+    }
+    .flip-clock-wrapper ul li {
+        line-height: 68px;
+    }
+    .flip-clock-wrapper ul li a div div.inn {
+        font-size: 50px !important;
+    }
+    .flip-clock-wrapper ul li a div.up:after {
+        top: auto;
+        bottom: 0;
+        height: 1px;
+    }
+    .flip-clock-dot.top {
+        top: 20px;
+    }
+    .flip-clock-dot.bottom {
+        bottom: 40px
+    }
+    .ulockd-flip-clock .clock .flip-clock-label {
+        margin-top: 110px;
+    }
+    .flip-clock-wrapper .flip-clock-divider.minutes {
+        margin-bottom: 10px;
+    }
+    .flip-clock-divider.minutes .flip-clock-label {
+        top: calc(80% + 3px);
+    }
+    .flip-clock-divider .flip-clock-label {
+        right: -66px;
+    }
+    .flip-clock-divider.hours .flip-clock-label {
+        right: -63px;
+    }
+    .flip-clock-divider.minutes .flip-clock-label, .flip-clock-divider.seconds .flip-clock-label {
+        right: -68px;
+    }
 }
 @media only screen and (max-width:800px){
 }
@@ -232,30 +331,37 @@
 	.ulockd-footer-qlink{margin-bottom: 80px;}
 
 	/* Icon-box */
-	.icon_box {padding: 20px;}	
+	.icon_box {padding: 20px;}
 	.couple-img::before, .couple-img::after {display: none;}
 	.logo-widget{margin-bottom: 15px;}
-	.font-icon-social {margin-bottom: 30px;}	
+	.font-icon-social {margin-bottom: 30px;}
 }
-
 @media only screen and (max-width:630px){
 	.ulockd-uconctruction-ttl {font-size: 60px;}
 	/* Main Slider 2 Start*/
 	.main-slider2 .mslider-caption{padding:10% 6%;}
 	/* Main Slider End*/
 	.feature-box .overlay {padding: 20px 0px 0;}
-	.upcoming-wedding-event .clock.flip-clock-wrapper, .clock.flip-clock-wrapper {margin-left: -10px !important;width: 104%;}
-	.ulockd-flip-clock .clock .flip-clock-label {margin-top: 130px;}
-    .upcoming-wedding-event .clock.flip-clock-wrapper .flip, .clock.flip-clock-wrapper .flip {margin-bottom: 50px;}
 	.image-box h3 {font-size: 20px;}
 	.testimonial-grid .details {padding: 10px 20px;}
 	figure.img-box figcaption {padding: 2em 2em;}
 	.team-member-two .team-two-details {bottom: -52%;}
-
+    .carousel-caption h1 {
+        margin-bottom: 5px;
+    }
+    .carousel-caption h1 span {
+        display: block;
+        line-height: 0;
+    }
+    .carousel-caption h1 img {
+        filter: brightness(0) invert(1);
+    }
+    #right1 {
+        background-position: 38% center !important;
+    }
 }
 /* (min-width:361px) (max-width:580px) */
 @media only screen and (max-width:580px){
-	.flip-clock-wrapper ul {width: 54px;}
 	.eventdate {border-radius: 10px;width: 90%;}
 	.ulockd-uconctruction-ttl {font-size: 48px;}
 }
@@ -312,8 +418,52 @@
     .masonry-gallery.grid-4 .isotope-item, .masonry-gallery.grid-5 .isotope-item, .masonry-gallery.grid-6 .isotope-item, .masonry-gallery.grid-7 .isotope-item, .masonry-gallery.grid-8 .isotope-item, .masonry-gallery.grid-9 .isotope-item, .masonry-gallery.grid-10 .isotope-item  {width: 100%;}
 	.fancybox-gallery-slider .owl-prev,
 	.fancybox-gallery-slider .owl-next {display: none !important;}
+
+    .flip-clock-wrapper ul {
+        width: 25px;
+        height: 55px;
+    }
+    .flip-clock-wrapper ul li {
+        line-height: 55px;
+    }
+    .flip-clock-wrapper ul li a div div.inn {
+        font-size: 40px !important;
+    }
+    .flip-clock-wrapper ul li a div.up:after {
+        top: auto;
+        bottom: 0;
+        height: 1px;
+    }
+    .flip-clock-dot.top {
+        top: 15px;
+    }
+    .flip-clock-dot.bottom {
+        bottom: 25px
+    }
+    .ulockd-flip-clock .clock .flip-clock-label {
+        margin-top: 90px;
+    }
+    .flip-clock-wrapper .flip-clock-divider.minutes {
+        margin-bottom: 10px;
+    }
+    .flip-clock-divider.minutes .flip-clock-label {
+        top: calc(80% + 3px);
+    }
+    .flip-clock-divider .flip-clock-label {
+        right: -56px;
+    }
+    .flip-clock-divider.hours .flip-clock-label {
+        right: -50px;
+    }
+    .flip-clock-divider.minutes .flip-clock-label, .flip-clock-divider.seconds .flip-clock-label {
+        right: -53px;
+    }
+    .flip-clock-divider {
+        height: 75px;
+    }
 }
 @media only screen and (max-width:414px){
+    .upcoming-wedding-event.ulockd-flip-clock {display: none;}
 	.hiden414 {display: none;}
 	.ulockd-blog-post h3 {font-size: 20px;}
 	.pogoSlider button.btn {display: none;}
@@ -341,7 +491,7 @@
 	.carousel-caption.style2 {top: 5%;}
 	.eventdate {width: 100%;}
 	.gift-slider .thumb {margin-bottom: 2px;}
-	.upcoming-wedding-event.ulockd-flip-clock {display: none;}
+
 	.video-section h1 {font-size: 40px;}
 
 }
