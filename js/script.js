@@ -1,7 +1,11 @@
 (function($) {
 
     "use strict";
-
+    var xxx = decodeURI(window.location.search.substr(1));
+    if (xxx) {
+        $('#xxx').show();
+        $('#name').text(decodeURI(window.location.search.substr(1)));
+    }
     /* ----- Preloader ----- */
     function preloaderLoad() {
         if($('.preloader').length){
