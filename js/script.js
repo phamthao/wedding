@@ -1,5 +1,5 @@
 (function($) {
-    
+
     "use strict";
 
     /* ----- Preloader ----- */
@@ -157,13 +157,13 @@
     };
 
     jQuery(document).on('ready',function(){
-        jQuery(window).stellar({ 
+        jQuery(window).stellar({
             horizontalScrolling: false,
             hideDistantElements: true,
             verticalScrolling: !isMobile.any(),
             scrollProperty: 'scroll',
             responsive: true
-        });          
+        });
     });
 
     /* ----- YTplayer ----- */
@@ -175,7 +175,7 @@
     if($('#myvideo').length) {
         $("#myvideo").vimeo("play");
     }
-    
+
     /* ----- fitVids ----- */
     if($('.body, #my-video').length) {
         $('.body').fitVids();
@@ -202,7 +202,7 @@
 
     /* ----- FLIP CLOCK ----- */
     function flip_Clock() {
-        var clock;    
+        var clock;
         var clock;
         clock = $('.clock').FlipClock({
             clockFace: 'DailyCounter',
@@ -215,10 +215,10 @@
         });
 
         var currentTime = new Date();
-		var weddingTime = new Date('2021-03-07 11:00:00');
+		var weddingTime = new Date('2021-03-14 11:00:00');
 		var diffTime = Math.abs(weddingTime - currentTime);
-		var diffSeconds = Math.ceil(diffTime / (1000)); 
-                
+		var diffSeconds = Math.ceil(diffTime / (1000));
+
         clock.setTime(diffSeconds);
         clock.setCountdown(true);
         clock.start();
@@ -307,7 +307,7 @@
                     start: '2018-05-28'
                 }
             ]
-        });        
+        });
     }
 
     if($('#calendar').length){
@@ -501,7 +501,7 @@
         });
         bar.init();
     }
-    
+
     /* ----- Date & time Picker ----- */
     if($('.datepicker').length){
         $('.datepicker').datetimepicker();
@@ -521,10 +521,10 @@
                 jQuery('#cycle-loader').hide();
                 jQuery('#maximage').fadeIn('fast');
             }
-        });        
+        });
         // Helper function to Fill and Center the HTML5 Video
         jQuery('#html5video').maximage('maxcover');
-            
+
         // To show it is dynamic html text
         jQuery('.in-slide-content').delay(2000).fadeIn();
     }
@@ -541,7 +541,7 @@
             responsive: true
         }).data('plugin_pogoSlider');
     }
-    
+
     /* ----- FullPage Slider, Particles Script & Multiscroll ----- */
     if($('#particles2-effect').length){
         $("#particles2-effect").jParticle({
@@ -855,10 +855,10 @@
 
     /* Unlock 1st BS SLider */
     function mhome_slider() {
-        //Function to animate slider captions 
+        //Function to animate slider captions
         function doAnimations( elems ) {
             //Cache the animationend event in a variable
-            var animEndEv = 'webkitAnimationEnd animationend';        
+            var animEndEv = 'webkitAnimationEnd animationend';
             elems.each(function () {
                 var $this = $(this),
                     $animationType = $this.data('animation');
@@ -867,16 +867,16 @@
                 });
             });
         }
-        //Variables on page load 
+        //Variables on page load
         var $myCarousel = $('#sg-carousel'),
-            $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");        
-        //Initialize carousel 
-        $myCarousel.carousel();    
-        //Animate captions in first slide on page load 
-        doAnimations($firstAnimatingElems);    
-        //Pause carousel  
+            $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+        //Initialize carousel
+        $myCarousel.carousel();
+        //Animate captions in first slide on page load
+        doAnimations($firstAnimatingElems);
+        //Pause carousel
         $myCarousel.carousel('pause');
-        //Other slides to be animated on carousel slide event 
+        //Other slides to be animated on carousel slide event
         $myCarousel.on('slide.bs.carousel', function (e) {
             var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
             doAnimations($animatingElems);
@@ -912,7 +912,7 @@
             qstrings: {
                 id: '44802888@N04'
             },
-            itemTemplate: 
+            itemTemplate:
             '<li>' +
                 '<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
             '</li>'
@@ -962,7 +962,7 @@
                 $('.scrollToHome').fadeOut();
             }
         });
-        
+
         //Click event to scroll to top
         $('.scrollToHome').on('click',function(){
             $('html, body').animate({scrollTop : 0},800);
@@ -984,7 +984,7 @@
         mhome_slider();
         instagram_feed();
     });
-    
+
 /* ======
    When document is loading, do
    ====== */
